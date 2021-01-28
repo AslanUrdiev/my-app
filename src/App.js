@@ -1,17 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import HeaderBlock from "./components/HeaderBlock/index";
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-      </header>
-    </div>
-  );
+  <React.Fragment>
+    <HeaderBlock 
+      title ='this is new props'
+      desc='this is new description'
+      />
+    <HeaderBlock title ='this is new props'/>
+  </React.Fragment>
+  )
 }
 
 export default App;
